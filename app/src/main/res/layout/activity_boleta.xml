@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcatalog"
+    android:orientation="vertical"
+    tools:context=".Boleta">
+
+    <TextView
+        android:id="@+id/etbol"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+        android:padding="5dp"
+        android:text="Bienvenido Cliente"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/imageBoleta"
+        android:layout_width="370dp"
+        android:layout_height="665dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boletabillbackground" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="98dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/volver3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:contentDescription="Volver a la pantalla anterior" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passreg"
+        android:background="@color/orange"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Registro de Usuario"
+        android:padding="25dp"
+        />
+
+    <TextView
+        android:id="@+id/tvseadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perfil:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/perfiladm"
+        android:layout_width="150dp"
+        android:layout_height="153dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/logo"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/regnom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@color/white"
+            android:hint="Ingrese Nombre"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/regape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="Ingrese Apellido"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/regemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:hint="Ingrese correo"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/regrut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="Ingrese Rut Ej 11.111.111-k"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/regpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="Ingrese Contraseña"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/repass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textPassword"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="Reingrese Contraseña"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/volver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:contentDescription="Volver a la pantalla anterior">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/grabar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+           android:layout_weight="1"
+            android:background="@drawable/guardar"
+            android:clickable="true"
+            android:contentDescription="Grabar Registros">
+
+        </ImageButton>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopago"
+    android:orientation="vertical"
+    tools:context=".procesarPago">
+
+    <TextView
+        android:id="@+id/etprocpac"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+        android:padding="5dp"
+        android:text="Bienvenido Cliente"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/Catalogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Procesando Pago... "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/tiempoRestante"
+            android:layout_width="193dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="00:05:00"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tiempoRestante"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="18dp"
+            android:background="#191818"
+            android:cursorVisible="false"
+            android:text="Iniciar"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:max="100"
+            android:progressTint="#FF5722"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

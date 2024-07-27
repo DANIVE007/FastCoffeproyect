@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "610672829822",
+    "project_id": "fastcoffee-ad26d",
+    "storage_bucket": "fastcoffee-ad26d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610672829822:android:1a9955b914899c256dbf2f",
+        "android_client_info": {
+          "package_name": "com.example.fastcoffee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPgbqefdcZPm0WQIki6qU-VhfaZID9Vho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

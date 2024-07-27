@@ -1,0 +1,144 @@
+<!-- pagos.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/fondonuevopago"
+    tools:context=".Pagos">
+
+    <TextView
+        android:id="@+id/etpago"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+        android:padding="5dp"
+        android:text="Bienvenido Cliente"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/tituloPago"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="Ingrese la información de la tarjeta"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="400dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="90dp"
+        android:paddingRight="20dp"
+        app:srcCompat="@drawable/redcompra" />
+
+    <EditText
+        android:id="@+id/numeroTarjeta"
+        android:layout_width="377dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/tituloPago"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:hint="Número de Tarjeta"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nombreTitular"
+        android:layout_width="380dp"
+        android:layout_height="66dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/numeroTarjeta"
+        android:layout_marginTop="16dp"
+        android:hint="Nombre del Titular" />
+
+    <!-- Define un array de recursos para los tipos de tarjetas -->
+
+
+    <Spinner
+        android:id="@+id/tipoTarjeta"
+        android:layout_width="180dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/nombreTitular"
+        android:layout_marginTop="55dp"
+        android:entries="@array/Tipos_de_Tarjeta"
+        android:hint="Seleccione el Tipo de Tarjeta"
+        android:paddingLeft="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="227dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="310dp"
+        android:paddingRight="20dp"
+        app:srcCompat="@drawable/tarjetas" />
+
+    <EditText
+        android:id="@+id/fechaExpiracion"
+        android:layout_width="381dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tipoTarjeta"
+        android:layout_marginTop="27dp"
+        android:paddingLeft="20dp"
+        android:hint="Fecha de Expiración (MM/YY)"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="390dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/fechaExpiracion"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="20dp"
+        android:hint="CVV"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="102dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="700dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <ImageButton
+            android:id="@+id/volver5"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:contentDescription="Volver a la pantalla anterior" />
+
+        <Button
+            android:id="@+id/btnPagar"
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/cvv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/white"
+            android:background="@color/gris"
+            android:textStyle="bold"
+            android:text="Pagar"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

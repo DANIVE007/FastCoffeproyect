@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcatalog"
+    android:orientation="vertical">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Contenido principal -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/etcatalogo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/orange"
+                android:padding="5dp"
+                android:text="Bienvenido Cliente"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Catalogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catalogo de Productos"
+                android:textAlignment="center"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/buscar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    app:iconifiedByDefault="false"
+                    android:focusable="false"
+                    android:imeOptions="actionSearch" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="155dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/listaproductos"
+                        android:layout_width="400dp"
+                        android:layout_height="540dp"
+                        android:background="@drawable/backgroundcatalog"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:text="Registro"
+                        android:focusable="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="700dp"
+                android:layout_marginLeft="28dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/volver"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/back"
+                    android:clickable="true"
+                    android:contentDescription="Volver a la pantalla anterior" />
+
+                <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/next"
+                    android:clickable="true"
+                    android:contentDescription="Siguiente Pantalla" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnMenu"
+                android:layout_width="14dp"
+                android:layout_height="76dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="1dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/vineta" />
+        </RelativeLayout>
+
+        <!-- Menú lateral -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            android:background="@color/whitemilk"
+            app:menu="@menu/nav_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

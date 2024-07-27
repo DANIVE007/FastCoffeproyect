@@ -1,0 +1,21 @@
+<!-- res/menu/nav_menu.xml -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_cambiar_foto"
+        android:title="Mensajería" />
+
+    <item
+        android:id="@+id/nav_ver_datos"
+        android:title="Modificar Mis Datos" />
+
+    <item
+        android:id="@+id/nav_compras_pagadas"
+        android:title="Registros de Compras" />
+
+    <item
+        android:id="@+id/nav_cerrar_sesion"
+        android:title="Cerrar Sesión" />
+
+</menu>

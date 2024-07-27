@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroundcatalog"
+    android:orientation="vertical"
+    tools:context=".CarritoCompras">
+
+    <TextView
+        android:id="@+id/etcarrocompras"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+        android:padding="5dp"
+        android:text="Bienvenido Cliente"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CarroCompras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carro de Compras"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView para mostrar los productos en el carrito -->
+
+    <!-- Añadir un Switch para seleccionar el producto -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+
+            android:layout_marginRight="12dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCarrito"
+                android:layout_width="400dp"
+                android:layout_height="580dp"/>
+        </LinearLayout>
+        </ScrollView>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:gravity="end"
+
+        android:padding="16dp"
+        android:text="Total: $0.00"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="28dp"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/volver1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:contentDescription="Volver a la pantalla anterior" />
+
+        <ImageButton
+            android:id="@+id/next1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/next"
+            android:clickable="true"
+            android:contentDescription="Siguiente Pantalla" />
+    </LinearLayout>
+
+</LinearLayout>
